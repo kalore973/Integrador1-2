@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Noticia+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">   
+ 
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg overflow-auto encabezado">
+      <div class="container-fluid  ">
+        <a class="navbar-brand confe" href="#">
+        <img  class="  confe logo" src="../assets/images/codoacodo.png" alt="imagen del logo codoacodo" width="130px">
+                Conferencia de Bs As 
+              </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificadoFinal">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-muted link" href="./pages/los_oradores.html">Los Oradores</a></li>
+                  <li class="nav-item"><a class="nav-link text-muted link" href="./pages/lugaryfecha.html"> Lugar y Fecha</a></li>
+                  <li class="nav-item"><a class="nav-link text-muted link" href="./pages/contacto.html">Conviértete en Orador</a></li>
+                  <li class="nav-item"><a class="nav-link tickets link" href="./pages/comprartickets.html ">Comprar Tickets</a></li>
+                
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </header>
+         </nav>
+         <body>  
+
+<main>
+ <section class="figuritas" >
+<div class="cart">
+  <div class="row row-cols-1 row-cols-md-1 g-5  carta ">
+  <div class="col" >
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+       <div class="card-header bg-primary">
+        <h3 class="card-title ">Estudiante</h3>
+    </div>
+     
+        <p class="card-text titulo">Tienen un descuento del</p>
+        <h2 class="titulo">80 %</h2> 
+        <p class="card-text titulo"><small class="text-muted">* Presentar documentación</small></p>
+      </div>
+    </div>
+  
+  </div>
+  <div class="row row-cols-1 row-cols-md-1 g-5 carta  ">
+      <div class="col">
+        <div class="card border-info mb-3" style="max-width: 18rem;"> 
+     
+        <div class="card-header bg-info">
+          <h3 class="card-title titulo">Trainee</h3>
+      </div>
+        <p class="card-text titulo">Tienen un descuento del</p>
+        <h2 class="titulo">80 %</h2> 
+        <p class="card-text titulo"><small class="text-muted">* Presentar documentación</small></p>
+      </div>
+    </div>
+  </div>
+
+    
+    <div class="row row-cols-1 row-cols-md-1 g-5 carta  ">
+      <div class="col">
+        <div class="card border-warning mb-3" style="max-width: 18rem;"> 
+     
+        <div class="card-header bg-warning ">
+          <h3 class="card-title titulo">Junior</h3>
+      </div>
+        <p class="card-text titulo">Tienen un descuento del</p>
+        <h2 class="titulo">80 %</h2> 
+        <p class="card-text titulo"><small class="text-muted">* Presentar documentación</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<section  class="venta">
+<div class="tex">
+    <h4>Venta</h4>
+    <h1>Valor de ticket $ 200</h1>
+  </div>
+  
+  <div class="row g-2">
+      <div class="col nombre">
+        <input  id="nombre" type="text" class="form-control  alert-primary"  placeholder="Nombre" aria-label="Nombre" requerid is-invalid >     
+   </div>
+   
+      <div class="col apellido">
+        <input  id="apellido" type="text" class="form-control alert-primary "  placeholder="Apellido" aria-label="Apellido" requerid is-invalid >     
+    </div>
+      <div class="row mail">
+        <div class="col mb-3">
+        <input  id="mail" type="email" class="form-control alert-primary"  placeholder="Email" aria-label="Email" requerid is-invalid >     
+      </div>
+    </div>
+    </section> 
+    
+     <!-- <section class="formu">-->
+    
+       <div class="row gx-2 canti">
+        <div class="col-md mb-3 ">
+          <label for="cantidadTickets" class="form-label">Cantidad</label>
+           <input id="cantidadTickets" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"  minlength="10">
+          
+          </div>
+        </div>
+        <div class="row gx-2 catego">
+        <div class="col-md mb-3 ">
+          <label for="categoriaSelect"  class="form-label">Categoría</label>  
+           <select  id="categoriaSelect" class="form-select"  aria-label="Categoria" id="categoria">
+              <option value="" selected>-- Seleccione--</option>
+              <option value="S">Sin Categoría</option>
+              <option value="E">Estudiante</option>
+              <option value="T">Trainee</option>
+              <option value="J">Junior</option>
+           </select>
+          </div>
+        </div>
+    </section >
+    
+    <div   class= " alert alert primary mt-2 mb-4 pago" role="alert" >
+      Total a pagar: $ <span id= "TotalCompra "   class="align-middle"></span>
+    
+    </div>
+    <section class="resu">
+      <div class="row gx-2 borrar">
+      <div class="col-md mb-3">
+
+      <button type="reset" class="  btn  btn-lg btn-form text-start" id="btnBorrar">Borrar</button>
+    </div>
+      </div>
+      <div class="row gx-2 resumen ">
+      <div class="col-md mb-3 ">
+         <button type="button"  class="btn btn-lg btn-form text-start" id="btnResumen">Resumen</button>
+      </div>
+      </div>
+    </section>
+    <footer>   
+    <div class=" container-fluid  conta"> 
+   <div class="p-2 flex-fill te">
+   <a class="pie" href="https://codoacodo.com" target="_blank">Preguntas frecuentes</a>
+   <a class="pie" href="https://codoacodo.com" target="_blank">Contáctanos</a>
+   <a class="pie" href="https://codoacodo.com" target="_blank">Prensa</a>
+   <a class="pie" href="https://codoacodo.com" target="_blank">Términos y Condiciones</a>
+   <a class="pie" href="https://codoacodo.com" target="_blank">Conferencias</a>
+   <a class="pie" href="https://codoacodo.com" target="_blank">Privacidad</a> 
+   <a class="pie" href="https://codoacodo.com" target="_blank">Estudiante</a> 
+   </div>  
+   </div> 
+   </footer>
+
+   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>     
+
